@@ -1,0 +1,157 @@
+/* custom styles */
+
+
+#fperrorslink{display:none;}
+
+#logo { height: 10 px;
+        width: 10 px ;
+
+
+
+}
+
+/*
+
+html{
+background: blue;
+linear-gradient( ... );
+}
+
+h1{ 
+    color:blue;
+    margin: 0px ;
+    padding: 20px;
+    border: 1px solid black ;
+    background: #00ffff;
+    }
+
+
+fieldset {
+    margin:  ;
+    padding: 0px;
+    border:  1px double blue ;
+    background: #00ffff;
+  
+
+}
+
+legend{
+    color:white;
+    margin: 0px ;
+    padding:  2px;
+    border: 1px solid white;
+    background: blue ;
+    font-weight:  bold;	
+   
+
+}
+
+
+label{
+    margin: 5px;
+    color:blue;
+    
+
+}
+     
+input{
+    
+	text-decoration: none ;
+	text-transform:  none  ;
+}
+
+
+
+textarea{
+  color: blue;
+  font-style: italic;
+   width: 200px;
+   height: 30px ;
+}
+
+
+select{
+     color: blue;
+     margin: 2px ;
+    padding: 20px;
+
+
+}
+     
+a { color:yellow ; border: 1px dotted blue;
+}
+a:hover{color:red;}
+
+
+
+li{
+    color : blue;
+    font-style: ;
+    font-family: arial; 
+    font-weight: ;		
+	line-height: 1.1 em ;
+	text-align: left ;
+	text-decoration: none ;
+	text-transform: capitalize  ;
+	list-style-type:none;
+    border:   ;
+
+
+
+}
+#clear {
+    display: none; margin: 15px;
+}
+p.reg {color:cyan;font-family: san-serif;
+    text-shadow:2px 2px 1px rgba(0,0,0,1.2);
+    text-transform:capitalize;
+    background-color:blue;
+    padding:10px;
+}
+#chest {display: none;}
+#abs {display: none;}
+#legs {display: none;}
+
+
+
+background
+
+
+
+
+
+p{ color: blue;
+
+}
+
+#ripready{
+width :20 px ;
+height: 20px ;
+}
+
+
+# chestpic {
+ margin: 1000px;
+ 
+
+}
+
+*/
+    
+/* margin -----
+padding ------
+border -----
+width 
+height 
+color ----
+background-color -----
+font-family ---
+font-weight ----
+font-style ----
+line-height ---
+text-align ---
+text-decoration ---
+text-transform--
+display 
+Extra-credit: list-style (I know I didn't go over this one in the video but I want you to try it out!)
+*/

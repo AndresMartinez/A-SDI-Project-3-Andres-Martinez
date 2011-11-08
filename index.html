@@ -1,0 +1,551 @@
+q  <!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Andres Martinez Mobile App</title><!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Mobile IE needs ClearType for smoothing fonts -->
+    <meta http-equiv="cleartype" content="on"><!-- StyleSheets under here -->
+    <style>
+    label.error {display:block; width:100%; text-align:center; background:blue; color:red; text-shadow: 1px 1px 2px black;}
+    ::-webkit-input-placeholder {color:blue}
+    p.message1 {background: #4182B5; padding:5px; color:#9BE2FC; text-shadow: 1px 2px 2px black; opacity:0.5}
+    .pane, .pane > .back, .pane > .cont { display: block; }
+    .pane {position: relative;}
+    .pane > .back {position: absolute;width: 100%; height: 100%;top: auto; bottom: auto; left: auto; right: auto;}
+    .pane > .cont {color:#9BE2FC; text-shadow: 1px 2px 2px black;text-align: center;padding: 5px;position: relative;z-index: 10;}
+    div .errormsg {color:red; text-shadow: 1px 1px 1px black}
+    </style>
+    
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" type="text/css"> -->
+    <link rel="stylesheet" href="CSS/jquery.mobile-1.0b3.css" type="text/css">
+    <link rel="stylesheet" href="CSS/jquery.mobile.datebox.css" type="text/css">
+    <link rel="stylesheet" href="CSS/Styles.css" type="text/css">
+    
+    <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+</script>
+</head>
+
+<body>
+   
+   
+    <div data-role="page" id="Home" data-theme="f">
+        <div data-role="header" data-position="fixed" data-theme="f">
+            <h1>A &amp; M Ultimate Workout</h1>
+             
+        </div>
+        
+                <div >
+                    <img src="img/A and M.jpg"  title="" id="logo"/>
+               </div>
+
+        
+        
+        <div data-role="content">
+            <ul align="center" data-role="listview" data-inset="true" data-filter="true" data-filter-theme="b" data-filter-placeholder="Search Here...">
+                <img src="img/getripped.png" width=100% title="ready to get ripped?" id="chestpic">
+            </ul>
+            <ul data-role="listview" data-inset="true">
+                <p><a href="#Chest" data-role="button" data-icon="arrow-r"
+                data-iconpos="right" data-theme="f">Chest<br><small>Extreme chest workout</small></a></p>
+                <p><a href="#Legs" data-role="button" data-icon="arrow-r"
+                data-iconpos="right" data-theme="f">Legs<br><small>Legs for days!</small></a></p>
+                <p><a href="#Abbs" data-role="button" data-icon="arrow-r"
+                data-iconpos="right" data-theme="f">Abs<br><small>Washboard abs routine!</small></a></p>
+                <p><a href="#Cardio" data-role="button" data-icon="arrow-r"
+                data-iconpos="right" data-theme="f">Cardio<br><small>Heart and Wind Workouts!</small></a></p>
+                <p><a href="#Diet" data-role="button" data-icon="arrow-r"
+                data-iconpos="right" data-theme="f">Diet<br><small>Put down the Donuts!</small></a></p>
+            </ul>
+            <p class="pane">
+                <span class="back" style="background: #4182B5;  opacity: 0.5;"></span>
+                <span class="cont">If you're looking for the best App out there to motivate you and pump you up, look no more! Get ripped in 30 days!!</span>
+            </p>
+            <a href="#Formpage" data-role="button" data-iconpos="top" data-icon="star" data-theme="c">Click here to get ripped!</a>
+            
+            	
+							
+            
+                        
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <center><p>&copy; 2011 - A&M Ultimate Workout</p></center>
+        </div>
+    </div>
+
+    <div data-role="page" id="Chest" data-theme="b" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h1>A &amp; M Chest</h1>
+        </div>
+        
+        
+                
+                <div >
+                    <img src="img/A and M.jpg"  title="" id="logo"/>
+               </div>
+
+
+
+        <div data-role="content">
+           
+            <ul data-role="listview" data-filter="true">
+                <li>
+                    <img src="img/BenchPress.png">
+
+                    <h3>Bench Press</h3>
+
+                    <p>Standard Workout To Build Muscle!</p>
+                </li>
+
+                <li>
+                    <img src="img/PushUp.png">
+
+                    <h3>Push-Ups</h3>
+
+                    <p>Good Workouts For Pro's &amp; Beginers!</p>
+                </li>
+
+                <li>
+                    <img src="img/Dips.png">
+
+                    <h3>Dips</h3>
+
+                    <p>Muscle you Will Never Lose!</p>
+                </li>
+
+                <li>
+                    <img src="img/Curls.png">
+
+                    <h3>Curls</h3>
+
+                    <p>Curls for The Girls!</p>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <center><p>&copy; 2011 - A&M Ultimate Workout</p></center>
+        </div>
+    </div>
+
+    <div data-role="page" id="Legs" data-theme="b" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h1>A &amp; M Legs</h1>
+        </div>
+        
+        
+                
+                <div >
+                    <img src="img/A and M.jpg"  title="" id="logo"/>
+               </div>
+
+
+
+        <div data-role="content">
+            <ul data-role="listview" data-filter="true">
+                <li>
+                    <img src="img/Squats.png">
+
+                    <h3>Squats</h3>
+
+                    <p>Geting your base in shape</p>
+                </li>
+
+                <li>
+                    <img src="img/LegPress.png">
+
+                    <h3>Leg Press</h3>
+
+                    <p>Building Muscle Fast</p>
+                </li>
+
+                <li>
+                    <img src="img/CalfRaise.png">
+
+                    <h3>Calf Raise</h3>
+
+                    <p>Build All Muscle Evenly</p>
+                </li>
+
+                <li>
+                    <img src="img/Lunges.png">
+
+                    <h3>Lunges</h3>
+
+                    <p>To Tone Your Legs</p>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <center><p>&copy; 2011 - A&M Ultimate Workout</p></center>
+        </div>
+    </div>
+
+    <div data-role="page" id="Abbs" data-theme="b" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h1>A &amp; M Abbs</h1>
+        </div>
+        
+                
+                <div >
+                    <img src="img/A and M.jpg"  title="" id="logo"/>
+               </div>
+
+
+
+        <div data-role="content">
+            <ul data-role="listview" data-filter="true">
+                <li>
+                    <img src="img/SitUps.png">
+
+                    <h3>Sit Ups</h3>
+
+                    <p>First Step To Riped Abbs</p>
+                </li>
+
+                <li>
+                    <img src="img/SideBends.png">
+
+                    <h3>Side Bends</h3>
+
+                    <p>Getting Rid Of Love Handles</p>
+                </li>
+
+                <li>
+                    <img src="img/BallCruch.png">
+
+                    <h3>Ball Cruch</h3>
+
+                    <p>Easy On the Back</p>
+                </li>
+
+                <li>
+                    <img src="img/BikeExercise.png">
+
+                    <h3>Bike Exercise</h3>
+
+                    <p>Tone Those Legs</p>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <center><p>&copy; 2011 - A&M Ultimate Workout</p></center>
+        </div>
+    </div>
+
+    <div data-role="page" id="Cardio" data-theme="b" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h1>A &amp; M Cardio</h1>
+        </div>
+        
+                
+                <div >
+                    <img src="img/A and M.jpg"  title="" id="logo"/>
+                </div>
+
+
+
+        <div data-role="content">
+            <ul data-role="listview" data-filter="true">
+                <li>
+                    <img src="img/Running.png">
+
+                    <h3>Running</h3>
+
+                    <p>Great for Your Heart</p>
+                </li>
+
+                <li>
+                    <img src="img/JumpRope.png">
+
+                    <h3>Jump Rope</h3>
+
+                    <p>Build Your Wind</p>
+                </li>
+
+                <li>
+                    <img src="img/JumpingJacks.png">
+
+                    <h3>Jumping Jacks</h3>
+
+                    <p>Full Body Exercise</p>
+                </li>
+
+                <li>
+                    <img src="img/Swimming.png">
+
+                    <h3>Swimming</h3>
+
+                    <p>Under the Water</p>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <center><p>&copy; 2011 - A&M Ultimate Workout</p></center>
+        </div>
+    </div>
+
+    <div data-role="page" id="Diet" data-theme="b" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h1>A &amp; M Diet</h1>
+        </div>
+        
+                
+                <div >
+                    <img src="img/A and M.jpg"  title="" id="logo"/>
+               </div>
+
+
+
+        <div data-role="content">
+            <ul data-role="listview" data-filter="true">
+                <li>
+                    <img src="img/EatingHappy.png">
+
+                    <h3>Eating Happy</h3>
+
+                    <p>Diets Must be Fun</p>
+                </li>
+
+                <li>
+                    <img src="img/PlentyofWater.png">
+
+                    <h3>Plenty of Water</h3>
+
+                    <p>Staying Hydrated is Important</p>
+                </li>
+
+                <li>
+                    <img src="img/ProtienShakes.png">
+
+                    <h3>Protien Shakes</h3>
+
+                    <p>Protien Bulids Muscle</p>
+                </li>
+
+                <li>
+                    <img src="img/EatingHealthy.png">
+
+                    <h3>Eating Healthy</h3>
+
+                    <p>Not Just for Today, For Life.</p>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <center><p>&copy; 2011 - A&M Ultimate Workout</p></center>
+        </div>
+    </div>
+
+    <div data-role="page" id="Formpage" data-theme="b" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h1>A &amp; M Form</h1>
+        </div>
+        
+                <div >
+                    <img src="img/A and M.jpg"  title="" id="logo"/>
+               </div>
+        
+        
+
+        <div data-role="content">
+            <form action="" method="post" id="Form">
+                <div data-role="fieldcontain">
+                    <label for="pworkout">Pick A Work-Out:</label>
+                    <select name="pworkout" id="pworkout" class="required">
+                        <option selected="" value="">Select Workout</option>
+                        <optgroup label="Chest">
+                            <option value="Benchpress">Benchpress</option>
+                            <option value="Pushups">Pushups</option>
+                            <option value="Dips">Dips</option>
+                            <option value="Curls">Curls</option>
+                        </optgroup>
+                        <optgroup label="Leg's">
+                            <option value="Squats">Squats</option>
+                            <option value="Legpress">Legpress</option>
+                            <option value="Calfraise">Calfraise</option>
+                            <option value="Lunges">Lunges</option>
+                        </optgroup>
+                        <optgroup label="Abb's">
+                            <option value="Situps">Situps</option>
+                            <option value="Sidebends">Sidebends</option>
+                            <option value="Ballcrunch">Ball Crunch</option>
+                            <option value="Bikeexercise">Bike Exercise</option>
+                        </optgroup>
+                        <optgroup label="Cardio">
+                            <option value="Running">Running</option>
+                            <option value="Jumprope">Jump Rope</option>
+                            <option value="Jumpingjacks"> Jumping Jacks</option>
+                            <option value="Swiming">Swiming</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <p><strong><u>More Workout Info</u></strong></p>
+                <div data-role="fieldcontain">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" class="required">
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="yes">Is This Your Favorite Work-out?</label>
+                    <input type="checkbox" value="yes" name="yes" id="yes" class="required">
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="reps">How many reps are you doing?</label>
+                    <select name="reps" id="reps" class="required">
+                        <option selected="" value="">Please Select One</option>
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="18">18</option>
+                        <option value="20">20</option>
+                    </select>
+                </div><!--  Need Date picker here-->
+                <div data-role="fieldcontain">
+                    <center>
+                        <label for="wkoutdate"></label>
+                        <input type="date" name="wkoutdate" id="wkoutdate" data-role="datebox" data-options='{"mode":"calbox"}' data-theme="b">
+                    </center>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="comments">Comments:</label> 
+                    <textarea id="comments"></textarea>
+                </div>
+                <input type="submit" value="Add Workout" data-icon="check" data-iconpos="top" data-theme="g">
+                <a href="#formpageerrors" id="fperrorslink" data-rel="dialog" data-transition="pop">Open Errors</a>
+                
+               <div data-theme="b" data-role="content">
+		<form action="" method="post" class="myForm" id="myForm">	    
+	    <p><input id="json" class='json' type="button" value="Import JSON" /></p>
+		<p><input id="xml" class='xml' type="button" value="Import XML" /></p>
+		<p><input id="csv" class='csv' type="button" value="Import CSV" /></p>
+	    
+	    
+	    
+	  
+      
+		
+	
+		<script>
+		$( '#sub' ).live( 'click',
+			function(event){
+			//This is how you call a function in jquery.
+			$(storeData(num));
+		  	
+			}
+		
+		);
+		
+		$( '#json' ).live( 'click',
+			function(event){
+			//This is how you call a function in jquery.
+			$(loadJSON());
+		  	
+			}
+		
+		);
+		
+		$( '#xml' ).live( 'click',
+			function(event){
+			//This is how you call a function in jquery.
+			$(loadXML());
+		  	
+			}
+		
+		);
+		
+		$( '#csv' ).live( 'click',
+			function(event){
+			//This is how you call a function in jquery.
+			$(loadCSV());
+		  	
+			}
+		
+		);
+		</script>
+    </form>
+		<div data-role="collapsible" class="submissions">
+
+		</div>
+	</div>
+	<input type='button' value='Clear Loading Dock' id='element' onClick="clearLocal();"/>
+	<div data-theme="b" data-role="footer">
+	<h4>A & M Ulitimate Workout</h4>
+	</div><!-- Footer -->
+
+</div><!-- Input Page -->                
+            </form>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <center><p>&copy; 2011 - A&M Ultimate Workout</p></center>
+        </div>
+    </div>
+
+    <div data-role="dialog" id="formpageerrors" data-theme="b">
+        <div class="errormsg" data-role="header" data-position="fixed" data-theme="b">
+            <h1>Missing Fields</h1>
+        </div>
+
+        <div data-role="content">
+            <ul>
+                <li>Test</li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position=""  data-theme="b">
+            <center><p>&copy; 2011 - A&M Ultimate Workout</p></center>
+        </div>
+   ///
+   
+      
+   
+       
+   
+   
+              
+        
+        
+    </div><!-- JavaScript under here -->
+    <script src="http://code.jquery.com/jquery-1.6.2.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.js" type="text/javascript"></script>
+    <script src="js/libs/jquery.mobile.datebox.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+    
+    <script type="text/javascript" src="js/main.js"></script>
+    
+    <script>
+	$( '#json' ).live( 'click',
+			function(event){
+			$(loadJSON());
+		  	
+			}
+		
+		);
+		
+		$( '#xml' ).live( 'click',
+			function(event){
+		    $(loadXML());
+		  	
+			}
+		
+		);
+		
+		$( '#csv' ).live( 'click',
+			function(event){
+			$(loadCSV());
+		  	
+			}
+		
+		);
+		</script>
+    
+ 
+</body>
+</html>
